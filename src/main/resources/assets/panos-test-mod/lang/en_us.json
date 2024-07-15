@@ -1,0 +1,12 @@
+{
+  "item.panos-test-mod.withered_bone": "Withered Bone",
+  "item.panos-test-mod.vodka": "Serkova 700ml",
+  "item.panos-test-mod.small_exp_bottle": "Small Exp Bottle",
+  "block.panos-test-mod.white_cobblestone": "White Cobblestone",
+  "block.panos-test-mod.blue_wood_planks": "Blue Wood Planks",
+  "block.panos-test-mod.copper_torch": "Copper Torch",
+  "block.panos-test-mod.ender_torch": "Ender Torch",
+  "block.panos-test-mod.copper_lantern": "Copper Lantern",
+  "block.panos-test-mod.ender_lantern": "Ender Lantern",
+  "itemGroup.panos-test-mod.example_group": "Panos Mod Items"
+}

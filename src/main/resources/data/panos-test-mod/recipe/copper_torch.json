@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "/",
+        "c"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:coal"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "c": {
+            "item": "minecraft:copper_ingot"
+        }
+    },
+    "result": {
+        "id": "panos-test-mod:copper_torch",
+        "count": 4
+    }
+}

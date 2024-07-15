@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "panos-test-mod:block/wall_ender_lantern"
+    },
+    "facing=north": {
+      "model": "panos-test-mod:block/wall_ender_lantern",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "panos-test-mod:block/wall_ender_lantern",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "panos-test-mod:block/wall_ender_lantern",
+      "y": 180
+    }
+  }
+}
