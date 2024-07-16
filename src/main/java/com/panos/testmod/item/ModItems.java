@@ -16,14 +16,21 @@ public class ModItems {
     public static final Item VODKA = register("vodka",
             new Item(new Item.Settings().food(FoodList.VODKA_SETTINGS).maxCount(2)));
 
-    public static final Item NAUTILUS_SPAWN_EGG = register("nautilus_spawn_egg",
-        new SpawnEggItem(ModEntities.NAUTILUS, 0xbaad96,0xbaad96,new Item.Settings()));
+    //public static final Item NAUTILUS_SPAWN_EGG = register("nautilus_spawn_egg",
+     //   new SpawnEggItem(ModEntities.NAUTILUS, 0xbaad96,0xbaad96,new Item.Settings()));
 
     public static final Item SMALL_EXP_BOTTLE = register("small_exp_bottle",
             new SmallExpBottleItem(new Item.Settings()));
 
     public static <T extends Item> T register(String name, T item){
         return Registry.register(Registries.ITEM, PanosTestMod.id(name),item);
+    }
+
+    public static final Item NAUTILUS_SPAWN_EGG = registerItem("nautilus_spawn_egg", ModItems.NAUTILUS_SPAWN_EGG);
+
+    public static Item registerItem(String name, Item item) {
+        return Registry.register(Registries.ITEM, PanosTestMod.id(name),
+                new SpawnEggItem(ModEntities.NAUTILUS, 0xbaad96, 0xca7548, new Item.Settings()));
     }
 
     public static void load() {}

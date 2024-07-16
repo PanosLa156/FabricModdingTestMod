@@ -2,15 +2,20 @@ package com.panos.testmod.datagen;
 
 import com.panos.testmod.PanosTestMod;
 import com.panos.testmod.block.ModBlocks;
+import com.panos.testmod.entity.ModEntities;
 import com.panos.testmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.Item;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+
+import java.util.Optional;
 
 public class PanosTestModModelProvider extends FabricModelProvider {
     public PanosTestModModelProvider(FabricDataOutput output) {
@@ -32,8 +37,8 @@ public class PanosTestModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SMALL_EXP_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.VODKA, Models.GENERATED);
         itemModelGenerator.register(ModItems.WITHERED_BONE, Models.GENERATED);
-
+        itemModelGenerator.register(ModItems.NAUTILUS_SPAWN_EGG,
+                new Model(Optional.of(PanosTestMod.id("item/template_spawn_egg")), Optional.empty()));
     }
 
-    public static final Item NAUTILUS_SPAWN_EGG = Registry.register(Registries.ITEM, PanosTestMod.id("nautilus_spawn_egg"), ModItems.NAUTILUS_SPAWN_EGG);
 }
