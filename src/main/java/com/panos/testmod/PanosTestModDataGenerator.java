@@ -1,6 +1,6 @@
 package com.panos.testmod;
 
-import com.panos.testmod.data.provider.PanosTestModModelProvider;
+import com.panos.testmod.datagen.PanosTestModModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 

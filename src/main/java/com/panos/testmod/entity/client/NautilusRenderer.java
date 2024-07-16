@@ -9,7 +9,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 
 public class NautilusRenderer extends MobEntityRenderer<NautilusEntity, NautilusModel<NautilusEntity>> {
-    public static final Identifier TEXTURE = PanosTestMod.id("resources/assets/panos-test-mod/textures/entity/nautilus.png");
+    public static final Identifier TEXTURE = PanosTestMod.id("textures/entity/nautilus.png");
 
     public NautilusRenderer(EntityRendererFactory.Context context) {
         super(context, new NautilusModel<>(context.getPart(ModModelLayers.NAUTILUS)), 0.6f);

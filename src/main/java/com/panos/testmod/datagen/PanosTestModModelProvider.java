@@ -1,5 +1,6 @@
-package com.panos.testmod.data.provider;
+package com.panos.testmod.datagen;
 
+import com.panos.testmod.PanosTestMod;
 import com.panos.testmod.block.ModBlocks;
 import com.panos.testmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -7,7 +8,9 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
-import net.minecraft.particle.ParticleTypes;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 
 public class PanosTestModModelProvider extends FabricModelProvider {
     public PanosTestModModelProvider(FabricDataOutput output) {
@@ -29,5 +32,8 @@ public class PanosTestModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SMALL_EXP_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.VODKA, Models.GENERATED);
         itemModelGenerator.register(ModItems.WITHERED_BONE, Models.GENERATED);
+
     }
+
+    public static final Item NAUTILUS_SPAWN_EGG = Registry.register(Registries.ITEM, PanosTestMod.id("nautilus_spawn_egg"), ModItems.NAUTILUS_SPAWN_EGG);
 }

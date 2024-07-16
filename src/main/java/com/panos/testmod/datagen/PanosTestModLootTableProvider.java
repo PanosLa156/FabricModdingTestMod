@@ -1,4 +1,4 @@
-package com.panos.testmod.data.provider;
+package com.panos.testmod.datagen;
 
 import com.panos.testmod.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;

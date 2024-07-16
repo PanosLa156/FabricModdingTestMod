@@ -3,9 +3,13 @@ package com.panos.testmod.entity.custom;
 import com.panos.testmod.entity.ModEntities;
 import com.panos.testmod.item.ModItems;
 import net.minecraft.component.type.PotionContentsComponent;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ExperienceOrbEntity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.projectile.ProjectileEntity;
+import net.minecraft.entity.projectile.thrown.ExperienceBottleEntity;
+import net.minecraft.entity.projectile.thrown.ThrownEntity;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.potion.Potions;
@@ -15,8 +19,10 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldEvents;
 
 public class SmallExpBottleEntity extends ThrownItemEntity {
+
     public SmallExpBottleEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
         super(entityType, world);
+
     }
 
     public SmallExpBottleEntity(World world, LivingEntity owner) {
