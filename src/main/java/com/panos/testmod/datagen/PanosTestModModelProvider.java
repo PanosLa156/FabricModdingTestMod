@@ -2,7 +2,6 @@ package com.panos.testmod.datagen;
 
 import com.panos.testmod.PanosTestMod;
 import com.panos.testmod.block.ModBlocks;
-import com.panos.testmod.entity.ModEntities;
 import com.panos.testmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -10,10 +9,6 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Model;
 import net.minecraft.data.client.Models;
-import net.minecraft.item.Item;
-import net.minecraft.item.SpawnEggItem;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 
 import java.util.Optional;
 
