@@ -7,4 +7,7 @@ import net.minecraft.client.render.entity.model.EntityModelLayer;
 public class ModModelLayers {
     public static final EntityModelLayer NAUTILUS =
             new EntityModelLayer(PanosTestMod.id("nautilus"), "main");
+
+    public static final EntityModelLayer GNOME =
+            new EntityModelLayer(PanosTestMod.id("gnome"), "main");
 }

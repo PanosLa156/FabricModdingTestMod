@@ -2,9 +2,7 @@ package com.panos.testmod;
 
 import com.panos.testmod.block.ModBlocks;
 import com.panos.testmod.entity.ModEntities;
-import com.panos.testmod.entity.client.ModModelLayers;
-import com.panos.testmod.entity.client.NautilusModel;
-import com.panos.testmod.entity.client.NautilusRenderer;
+import com.panos.testmod.entity.client.*;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
@@ -26,8 +24,10 @@ public class PanosTestModClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.SMALL_EXP_BOTTLE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.NAUTILUS, NautilusRenderer::new);
+        EntityRendererRegistry.register(ModEntities.GNOME, GnomeRenderer::new);
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.NAUTILUS, NautilusModel::getTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GNOME, GnomeModel::getTexturedModelData);
         //EntityRendererRegistry.INSTANCE.register(ModEntities.NAUTILUS, (entityRenderDispatcher, context) -> new NautilusRenderer(entityRenderDispatcher));
     }
 }

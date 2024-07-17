@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item WITHERED_BONE = register("withered_bone", new Item(new Item.Settings()));
+    public static final Item RUBY = register("ruby", new Item(new Item.Settings()));
     public static final Item VODKA = register("vodka",
             new Item(new Item.Settings().food(FoodList.VODKA_SETTINGS).maxCount(2)));
 

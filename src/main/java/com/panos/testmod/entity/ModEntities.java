@@ -1,6 +1,7 @@
 package com.panos.testmod.entity;
 
 import com.panos.testmod.PanosTestMod;
+import com.panos.testmod.entity.custom.GnomeEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
@@ -22,6 +23,14 @@ public class ModEntities {
             PanosTestMod.id("nautilus"),
             EntityType.Builder.create(NautilusEntity::new, SpawnGroup.WATER_CREATURE)
                     .dimensions(0.75f, 0.5f)
+                    .maxTrackingRange(4).trackingTickInterval(10)
+                    .build());
+
+    public static final EntityType<GnomeEntity> GNOME = Registry.register(
+            Registries.ENTITY_TYPE,
+            PanosTestMod.id("gnome"),
+            EntityType.Builder.<GnomeEntity>create(GnomeEntity::new, SpawnGroup.AMBIENT)
+                    .dimensions(1f, 1f)
                     .maxTrackingRange(4).trackingTickInterval(10)
                     .build());
 

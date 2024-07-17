@@ -2,6 +2,7 @@ package com.panos.testmod;
 
 import com.panos.testmod.block.ModBlocks;
 import com.panos.testmod.entity.ModEntities;
+import com.panos.testmod.entity.custom.GnomeEntity;
 import com.panos.testmod.entity.custom.NautilusEntity;
 import com.panos.testmod.item.ModItems;
 import com.panos.testmod.itemGroups.ItemGroups;
@@ -60,6 +61,7 @@ public class PanosTestMod implements ModInitializer {
 		Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MOD_ID, "ender_flame"), ENDER_FLAME);
 
 		FabricDefaultAttributeRegistry.register(ModEntities.NAUTILUS, NautilusEntity.createNautilusAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.GNOME, GnomeEntity.createGnomeAttributes());
 		//FabricDefaultAttributeRegistry.register(ModEntities.NAUTILUS, NautilusEntity.createMobAttributes());
 
 	}
