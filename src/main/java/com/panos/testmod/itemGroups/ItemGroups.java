@@ -17,15 +17,22 @@ public class ItemGroups {
             .displayName(EXAMPLE_TITLE)
             .icon(ModItems.VODKA::getDefaultStack)
             .entries((context, entries) -> {
-                        entries.add(ModItems.WITHERED_BONE);
-                        entries.add(ModItems.VODKA);
-                        entries.add(ModItems.SMALL_EXP_BOTTLE);
-                        entries.add(ModBlocks.WHITE_COBBLESTONE);
-                        entries.add(ModBlocks.BLUE_WOOD_PLANKS);
-                        entries.add(ModBlocks.COPPER_LANTERN);
-                        entries.add(ModBlocks.COPPER_TORCH);
-                        entries.add(ModBlocks.ENDER_LANTERN);
-                        entries.add(ModBlocks.ENDER_TORCH);
+
+                entries.add(ModItems.WITHERED_BONE);
+                entries.add(ModItems.VODKA);
+                entries.add(ModItems.SMALL_EXP_BOTTLE);
+                entries.add(ModItems.NAUTILUS_SPAWN_EGG);
+                entries.add(ModBlocks.WHITE_COBBLESTONE);
+                entries.add(ModBlocks.BLUE_WOOD_PLANKS);
+                entries.add(ModBlocks.COPPER_LANTERN);
+                entries.add(ModBlocks.COPPER_TORCH);
+                entries.add(ModBlocks.ENDER_LANTERN);
+                entries.add(ModBlocks.ENDER_TORCH);
+                entries.add(ModBlocks.DEADWOOD_PLANKS);
+                entries.add(ModBlocks.DEADWOOD_LOG);
+                entries.add(ModBlocks.DEADWOOD_WOOD);
+                entries.add(ModBlocks.STRIPPED_DEADWOOD_LOG);
+                entries.add(ModBlocks.STRIPPED_DEADWOOD_WOOD);
                     })
             .build());
             public static <T extends ItemGroup> T register(String name, T itemGroup)

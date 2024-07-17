@@ -1,0 +1,12 @@
+// 1.21	2024-07-17T16:24:14.3581729	Panos Test Mod/Block Loot Tables
+d1866536f1746c06ae8d3b73347dc5a64985673c data\panos-test-mod\loot_table\blocks\copper_torch.json
+915d82084189bdb3097158ea39da02d97d0121f2 data\panos-test-mod\loot_table\blocks\deadwood_planks.json
+153601fcbfae883f9d2dfab66a8397bf61ed44df data\panos-test-mod\loot_table\blocks\stripped_deadwood_log.json
+81c29ab7bcfd7f84c97c80b2733826e037b189bf data\panos-test-mod\loot_table\blocks\stripped_deadwood_wood.json
+d24778ef4edea119025fdca7095f961facfd06ea data\panos-test-mod\loot_table\blocks\ender_torch.json
+318096c7218b57241151cd7484f26cf58245f660 data\panos-test-mod\loot_table\blocks\ender_lantern.json
+8265119157cf943c9eb5ca1bf96e2aeb56bea758 data\panos-test-mod\loot_table\blocks\deadwood_log.json
+7bd6df74e37aefb25ddebd9b946fc52cafad5e27 data\panos-test-mod\loot_table\blocks\copper_lantern.json
+6ccd051d2b61563e50618cd859942759376e92ed data\panos-test-mod\loot_table\blocks\blue_wood_planks.json
+7ef3cc5c103186729d1b2082a467abe6ea19a25b data\panos-test-mod\loot_table\blocks\white_cobblestone.json
+1835a7cc23f48d54c107a2ad048c3ca6d4aeee20 data\panos-test-mod\loot_table\blocks\deadwood_wood.json

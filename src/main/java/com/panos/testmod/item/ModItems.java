@@ -26,9 +26,9 @@ public class ModItems {
         return Registry.register(Registries.ITEM, PanosTestMod.id(name),item);
     }
 
-    public static final Item NAUTILUS_SPAWN_EGG = registerItem("nautilus_spawn_egg", ModItems.NAUTILUS_SPAWN_EGG);
+    public static final Item NAUTILUS_SPAWN_EGG = registerSpawnEggItem("nautilus_spawn_egg", ModItems.NAUTILUS_SPAWN_EGG);
 
-    public static Item registerItem(String name, Item item) {
+    public static Item registerSpawnEggItem(String name, Item item) {
         return Registry.register(Registries.ITEM, PanosTestMod.id(name),
                 new SpawnEggItem(ModEntities.NAUTILUS, 0xbaad96, 0xca7548, new Item.Settings()));
     }

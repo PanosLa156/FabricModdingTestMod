@@ -13,7 +13,9 @@ import java.util.concurrent.CompletableFuture;
 import java.util.function.BiConsumer;
 
 public class PanosTestModLootTableProvider extends FabricBlockLootTableProvider {
-    protected PanosTestModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+
+
+    public PanosTestModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
     }
 
@@ -25,6 +27,11 @@ public class PanosTestModLootTableProvider extends FabricBlockLootTableProvider 
         addDrop(ModBlocks.COPPER_TORCH);
         addDrop(ModBlocks.ENDER_LANTERN);
         addDrop(ModBlocks.ENDER_TORCH);
+        addDrop((ModBlocks.DEADWOOD_LOG));
+        addDrop((ModBlocks.DEADWOOD_WOOD));
+        addDrop((ModBlocks.DEADWOOD_PLANKS));
+        addDrop((ModBlocks.STRIPPED_DEADWOOD_LOG));
+        addDrop((ModBlocks.STRIPPED_DEADWOOD_WOOD));
     }
 
     @Override

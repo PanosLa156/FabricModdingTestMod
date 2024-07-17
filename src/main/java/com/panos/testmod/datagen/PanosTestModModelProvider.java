@@ -21,8 +21,15 @@ public class PanosTestModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLUE_WOOD_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_COBBLESTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEADWOOD_PLANKS);
+        blockStateModelGenerator.registerLog(ModBlocks.DEADWOOD_LOG).log(ModBlocks.DEADWOOD_LOG).wood(ModBlocks.DEADWOOD_WOOD);
+        //blockStateModelGenerator.registerLog(ModBlocks.DEADWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_DEADWOOD_LOG).log(ModBlocks.STRIPPED_DEADWOOD_LOG).wood(ModBlocks.STRIPPED_DEADWOOD_WOOD);
+        //blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_DEADWOOD_WOOD);
+
         blockStateModelGenerator.registerLantern(ModBlocks.COPPER_LANTERN);
         blockStateModelGenerator.registerLantern(ModBlocks.ENDER_LANTERN);
+
         blockStateModelGenerator.registerTorch(ModBlocks.COPPER_TORCH, ModBlocks.WALL_COPPER_TORCH);
         blockStateModelGenerator.registerTorch(ModBlocks.ENDER_TORCH, ModBlocks.WALL_ENDER_TORCH);
     }

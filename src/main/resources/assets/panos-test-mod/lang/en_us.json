@@ -9,5 +9,11 @@
   "block.panos-test-mod.ender_torch": "Ender Torch",
   "block.panos-test-mod.copper_lantern": "Copper Lantern",
   "block.panos-test-mod.ender_lantern": "Ender Lantern",
+
+  "block.panos-test-mod.deadwood_log": "Deadwood Log",
+  "block.panos-test-mod.deadwood_wood": "Deadwood Wood",
+  "block.panos-test-mod.deadwood_planks": "Deadwood Planks",
+  "block.panos-test-mod.stripped_deadwood_log": "Stripped Deadwood Log",
+  "block.panos-test-mod.stripped_deadwood_wood": "Stripped Deadwood Wood",
   "itemGroup.panos-test-mod.example_group": "Panos Mod Items"
 }

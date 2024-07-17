@@ -29,11 +29,11 @@ public class ModBlocks {
     public static final Block ENDER_TORCH = registerWithItem("ender_torch",
             new TorchBlock(PanosTestMod.ENDER_FLAME, TorchBlock.Settings.copy(Blocks.TORCH)));
 
-    public static final Block WALL_COPPER_TORCH = registerWithItem("wall_copper_torch",
-            new WallTorchBlock(ParticleTypes.SOUL_FIRE_FLAME, AbstractBlock.Settings.copy(Blocks.TORCH)));
+    public static final Block WALL_COPPER_TORCH = register("wall_copper_torch",
+            new WallTorchBlock(PanosTestMod.COPPER_FLAME, AbstractBlock.Settings.copy(Blocks.TORCH)));
 
-    public static final Block WALL_ENDER_TORCH = registerWithItem("wall_ender_lantern",
-            new WallTorchBlock(ParticleTypes.SOUL_FIRE_FLAME, TorchBlock.Settings.copy(Blocks.TORCH)));
+    public static final Block WALL_ENDER_TORCH = register("wall_ender_torch",
+            new WallTorchBlock(PanosTestMod.ENDER_FLAME, TorchBlock.Settings.copy(Blocks.TORCH)));
 
     public static final Block DEADWOOD_LOG = registerWithItem("deadwood_log",
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.COBBLESTONE)));
@@ -48,7 +48,7 @@ public class ModBlocks {
             new PillarBlock(AbstractBlock.Settings.copy(Blocks.COBBLESTONE)));
 
     public static final Block DEADWOOD_PLANKS = registerWithItem("deadwood_planks",
-            new PillarBlock(AbstractBlock.Settings.copy(Blocks.COBBLESTONE)));
+            new Block(AbstractBlock.Settings.copy(Blocks.COBBLESTONE)));
 
     public static <T extends Block> T register(String name, T block)
     {
