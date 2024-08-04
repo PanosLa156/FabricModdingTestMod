@@ -22,6 +22,7 @@ public class ItemGroups {
                 entries.add(ModItems.VODKA);
                 entries.add(ModItems.SMALL_EXP_BOTTLE);
                 entries.add(ModItems.NAUTILUS_SPAWN_EGG);
+                entries.add(ModItems.DRAGON_ELYTRA);
                 entries.add(ModBlocks.WHITE_COBBLESTONE);
                 entries.add(ModBlocks.BLUE_WOOD_PLANKS);
                 entries.add(ModBlocks.COPPER_LANTERN);

@@ -51,6 +51,9 @@ public class PanosTestMod implements ModInitializer {
 		ItemGroupEvents.modifyEntriesEvent(net.minecraft.item.ItemGroups.NATURAL).register(entries -> {
 			entries.add(ModItems.WITHERED_BONE);
 		});
+		ItemGroupEvents.modifyEntriesEvent(net.minecraft.item.ItemGroups.TOOLS).register(entries -> {
+			entries.add(ModItems.DRAGON_ELYTRA);
+		});
 		ItemGroupEvents.modifyEntriesEvent(net.minecraft.item.ItemGroups.BUILDING_BLOCKS).register(entries -> {
 			entries.add(ModBlocks.WHITE_COBBLESTONE);
 		});
