@@ -21,7 +21,7 @@ public class ModItems {
     public static final ElytraItem DRAGON_ELYTRA = register("dragon_elytra", new ElytraItem(new ElytraItem.Settings()));
 
     public static final Item SMALL_EXP_BOTTLE = register("small_exp_bottle",
-            new SmallExpBottleItem(new Item.Settings()));
+            new SmallExpBottleItem(new Item.Settings().maxCount(1)));
 
     public static <T extends Item> T register(String name, T item){
         return Registry.register(Registries.ITEM, PanosTestMod.id(name),item);
