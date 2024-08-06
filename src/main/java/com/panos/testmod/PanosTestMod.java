@@ -6,6 +6,7 @@ import com.panos.testmod.entity.custom.GnomeEntity;
 import com.panos.testmod.entity.custom.NautilusEntity;
 import com.panos.testmod.item.ModItems;
 import com.panos.testmod.itemGroups.ItemGroups;
+import com.panos.testmod.util.ModLootTableModifier;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -44,6 +45,7 @@ public class PanosTestMod implements ModInitializer {
 		ModBlocks.load();
 		ModEntities.load();
 		ItemGroups.load();
+		ModLootTableModifier.modifyLootTables();
 
 		ItemGroupEvents.modifyEntriesEvent(net.minecraft.item.ItemGroups.FOOD_AND_DRINK).register(entries -> {
 			entries.add(ModItems.VODKA);

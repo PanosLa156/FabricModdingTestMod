@@ -11,6 +11,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
+import net.minecraft.client.render.entity.feature.ElytraFeatureRenderer;
 
 public class PanosTestModClient implements ClientModInitializer {
     @Override
@@ -23,11 +24,14 @@ public class PanosTestModClient implements ClientModInitializer {
         ParticleFactoryRegistry.getInstance().register(PanosTestMod.ENDER_FLAME, FlameParticle.Factory::new);
 
         EntityRendererRegistry.register(ModEntities.SMALL_EXP_BOTTLE, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.MEDIUM_EXP_BOTTLE, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.LARGE_EXP_BOTTLE, FlyingItemEntityRenderer::new);
+        EntityRendererRegistry.register(ModEntities.GRAND_EXP_BOTTLE, FlyingItemEntityRenderer::new);
+
         EntityRendererRegistry.register(ModEntities.NAUTILUS, NautilusRenderer::new);
         EntityRendererRegistry.register(ModEntities.GNOME, GnomeRenderer::new);
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.NAUTILUS, NautilusModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GNOME, GnomeModel::getTexturedModelData);
-        //EntityRendererRegistry.INSTANCE.register(ModEntities.NAUTILUS, (entityRenderDispatcher, context) -> new NautilusRenderer(entityRenderDispatcher));
     }
 }

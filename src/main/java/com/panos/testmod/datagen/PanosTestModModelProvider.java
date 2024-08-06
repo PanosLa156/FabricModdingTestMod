@@ -37,8 +37,14 @@ public class PanosTestModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.SMALL_EXP_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MEDIUM_EXP_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LARGE_EXP_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GRAND_EXP_BOTTLE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.VODKA, Models.GENERATED);
         itemModelGenerator.register(ModItems.WITHERED_BONE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DRAGON_ELYTRA, Models.GENERATED);
         itemModelGenerator.register(ModItems.NAUTILUS_SPAWN_EGG,
                 new Model(Optional.of(PanosTestMod.id("item/template_spawn_egg")), Optional.empty()));
     }
