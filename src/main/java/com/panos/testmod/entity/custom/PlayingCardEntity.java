@@ -76,11 +76,11 @@ public class PlayingCardEntity extends PersistentProjectileEntity {
     }
 
     public PlayingCardEntity(World world, double x, double y, double z, ItemStack stack) {
-        super(EntityType.TRIDENT, x, y, z, world, stack, stack);
+        super(ModEntities.PLAYING_CARD, x, y, z, world, stack, stack);
     }
 
     public PlayingCardEntity(World world, LivingEntity owner, ItemStack stack) {
-        super(EntityType.TRIDENT, owner, world, stack, null);
+        super(ModEntities.PLAYING_CARD, owner, world, stack, null);
     }
 
 

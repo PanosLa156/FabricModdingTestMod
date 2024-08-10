@@ -3,7 +3,6 @@ package com.panos.testmod.entity.client;
 import com.panos.testmod.PanosTestMod;
 import com.panos.testmod.entity.custom.PlayingCardEntity;
 import net.minecraft.client.render.entity.EntityRendererFactory;
-import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.render.entity.ProjectileEntityRenderer;
 import net.minecraft.util.Identifier;
 
