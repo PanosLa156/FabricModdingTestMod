@@ -49,7 +49,7 @@ public class ModEntities {
     public static final EntityType<NautilusEntity> NAUTILUS = Registry.register(
             Registries.ENTITY_TYPE,
             PanosTestMod.id("nautilus"),
-            EntityType.Builder.create(NautilusEntity::new, SpawnGroup.WATER_CREATURE)
+            EntityType.Builder.<NautilusEntity>create(NautilusEntity::new, SpawnGroup.WATER_CREATURE)
                     .dimensions(0.75f, 0.5f)
                     .maxTrackingRange(4).trackingTickInterval(10)
                     .build());

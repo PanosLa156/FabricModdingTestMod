@@ -51,6 +51,7 @@ package com.panos.testmod.entity.custom;
 import com.panos.testmod.entity.ModEntities;
 import com.panos.testmod.item.ModItems;
 import net.minecraft.block.BlockState;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
@@ -62,7 +63,7 @@ import org.jetbrains.annotations.Nullable;
 public class PlayingCardEntity extends PersistentProjectileEntity {
 
 
-    protected PlayingCardEntity(EntityType<? extends PersistentProjectileEntity> entityType, World world) {
+    public PlayingCardEntity(EntityType<? extends PersistentProjectileEntity> entityType, World world) {
         super(entityType, world);
     }
 
@@ -81,6 +82,7 @@ public class PlayingCardEntity extends PersistentProjectileEntity {
     public PlayingCardEntity(World world, LivingEntity owner, ItemStack stack) {
         super(EntityType.TRIDENT, owner, world, stack, null);
     }
+
 
     @Override
     public ItemStack getDefaultItemStack() {
