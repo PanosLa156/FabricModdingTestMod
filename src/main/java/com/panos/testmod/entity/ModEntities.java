@@ -1,6 +1,7 @@
 package com.panos.testmod.entity;
 
 import com.panos.testmod.PanosTestMod;
+import com.panos.testmod.entity.client.PlayingCardRenderer;
 import com.panos.testmod.entity.custom.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -34,6 +35,14 @@ public class ModEntities {
             PanosTestMod.id("grand_exp_bottle"),
             EntityType.Builder.<GrandExpBottleEntity>create(GrandExpBottleEntity::new, SpawnGroup.MISC)
                     .dimensions(0.25f, 0.25f)
+                    .maxTrackingRange(4).trackingTickInterval(10)
+                    .build());
+
+    public static final EntityType<PlayingCardEntity> PLAYING_CARD = Registry.register(
+            Registries.ENTITY_TYPE,
+            PanosTestMod.id("playing_card"),
+            EntityType.Builder.<PlayingCardEntity>create(PlayingCardEntity::new, SpawnGroup.MISC)
+                    .dimensions(0.1f, 0.1f)
                     .maxTrackingRange(4).trackingTickInterval(10)
                     .build());
 

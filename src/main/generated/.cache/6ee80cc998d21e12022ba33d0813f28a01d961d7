@@ -1,4 +1,4 @@
-// 1.21	2024-08-05T19:37:12.1333644	Panos Test Mod/Model Definitions
+// 1.21	2024-08-10T21:52:29.6307879	Panos Test Mod/Model Definitions
 32aee8100314779a2ece8d10a050c905a9b54180 assets\panos-test-mod\blockstates\deadwood_wood.json
 ca0b253569c667e8bd508bbd13404102ac216d1e assets\panos-test-mod\blockstates\blue_wood_planks.json
 7e77411a4ecc8c7ed83729a43e59505b9f435c7a assets\panos-test-mod\models\item\deadwood_wood.json
@@ -38,6 +38,7 @@ c2ea65b13c2f3cd52b2acc24fa98bdd2923bb528 assets\panos-test-mod\models\item\small
 c112773277bf3856ce19d97073f5752f206fd224 assets\panos-test-mod\models\item\vodka.json
 98d4595a5707db78a90a565cd2eaf10cf93949f5 assets\panos-test-mod\models\block\deadwood_planks.json
 60493db33f476bc4d0b45ac3e78c9c10674b3463 assets\panos-test-mod\models\item\nautilus_spawn_egg.json
+6d8f28cdf016ddfdeae5cadf76bf1a0aa49d0a76 assets\panos-test-mod\models\item\playing_card.json
 3e43fcff73b55a327dc292f42210567c43cf015c assets\panos-test-mod\blockstates\white_cobblestone.json
 54755804c99c693230ea0700a14eb90030e492cf assets\panos-test-mod\models\block\ender_lantern_hanging.json
 416528e4f2de7e3be053cf3c706861ff43099893 assets\panos-test-mod\blockstates\stripped_deadwood_log.json

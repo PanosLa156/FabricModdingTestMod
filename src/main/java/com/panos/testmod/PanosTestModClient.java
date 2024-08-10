@@ -28,10 +28,13 @@ public class PanosTestModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.LARGE_EXP_BOTTLE, FlyingItemEntityRenderer::new);
         EntityRendererRegistry.register(ModEntities.GRAND_EXP_BOTTLE, FlyingItemEntityRenderer::new);
 
+        EntityRendererRegistry.register(ModEntities.PLAYING_CARD, PlayingCardRenderer::new);
+
         EntityRendererRegistry.register(ModEntities.NAUTILUS, NautilusRenderer::new);
         EntityRendererRegistry.register(ModEntities.GNOME, GnomeRenderer::new);
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.NAUTILUS, NautilusModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GNOME, GnomeModel::getTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PLAYING_CARD, GnomeModel::getTexturedModelData);
     }
 }

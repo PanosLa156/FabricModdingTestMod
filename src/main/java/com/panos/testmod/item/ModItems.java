@@ -2,10 +2,7 @@ package com.panos.testmod.item;
 
 import com.panos.testmod.PanosTestMod;
 import com.panos.testmod.entity.ModEntities;
-import com.panos.testmod.item.custom.GrandExpBottleItem;
-import com.panos.testmod.item.custom.LargeExpBottleItem;
-import com.panos.testmod.item.custom.MediumExpBottleItem;
-import com.panos.testmod.item.custom.SmallExpBottleItem;
+import com.panos.testmod.item.custom.*;
 import com.panos.testmod.list.FoodList;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.item.ElytraItem;
@@ -32,6 +29,9 @@ public class ModItems {
             new LargeExpBottleItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
     public static final Item GRAND_EXP_BOTTLE = register("grand_exp_bottle",
             new GrandExpBottleItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
+
+    public static final Item PLAYING_CARD = register("playing_card",
+            new PlayingCardItem(new Item.Settings()));
 
     public static <T extends Item> T register(String name, T item){
         return Registry.register(Registries.ITEM, PanosTestMod.id(name),item);

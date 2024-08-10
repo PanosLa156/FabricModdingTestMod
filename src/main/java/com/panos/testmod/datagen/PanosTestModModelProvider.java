@@ -41,6 +41,8 @@ public class PanosTestModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LARGE_EXP_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GRAND_EXP_BOTTLE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.PLAYING_CARD, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.VODKA, Models.GENERATED);
         itemModelGenerator.register(ModItems.WITHERED_BONE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
