@@ -5,6 +5,8 @@ import com.panos.testmod.entity.client.PlayingCardRenderer;
 import com.panos.testmod.entity.custom.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
+import net.minecraft.entity.passive.GolemEntity;
+import net.minecraft.entity.passive.IronGolemEntity;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
@@ -60,6 +62,13 @@ public class ModEntities {
             EntityType.Builder.<GnomeEntity>create(GnomeEntity::new, SpawnGroup.AMBIENT)
                     .dimensions(1f, 1f)
                     .maxTrackingRange(4).trackingTickInterval(10)
+                    .build());
+
+    public static final EntityType<GuardGolemEntity> GOLEM_GUARD = Registry.register(
+            Registries.ENTITY_TYPE,
+            PanosTestMod.id("guard_golem"),
+            EntityType.Builder.create(GuardGolemEntity::new, SpawnGroup.MISC)
+                    .dimensions(1.5f, 1.5f)
                     .build());
 
     public static void load() {}

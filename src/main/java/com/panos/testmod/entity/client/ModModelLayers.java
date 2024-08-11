@@ -13,4 +13,7 @@ public class ModModelLayers {
 
     public static final EntityModelLayer PLAYING_CARD =
             new EntityModelLayer(PanosTestMod.id("playing_card"), "main");
+
+    public static final EntityModelLayer GUARD_GOLEM =
+            new EntityModelLayer(PanosTestMod.id("guard_golem"), "main");
 }

@@ -3,6 +3,7 @@ package com.panos.testmod;
 import com.panos.testmod.block.ModBlocks;
 import com.panos.testmod.entity.ModEntities;
 import com.panos.testmod.entity.custom.GnomeEntity;
+import com.panos.testmod.entity.custom.GuardGolemEntity;
 import com.panos.testmod.entity.custom.NautilusEntity;
 import com.panos.testmod.item.ModItems;
 import com.panos.testmod.itemGroups.ItemGroups;
@@ -67,6 +68,7 @@ public class PanosTestMod implements ModInitializer {
 
 		FabricDefaultAttributeRegistry.register(ModEntities.NAUTILUS, NautilusEntity.createNautilusAttributes());
 		FabricDefaultAttributeRegistry.register(ModEntities.GNOME, GnomeEntity.createGnomeAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.GOLEM_GUARD, GuardGolemEntity.createGuardGolemAttributes());
 		//FabricDefaultAttributeRegistry.register(ModEntities.NAUTILUS, NautilusEntity.createMobAttributes());
 
 	}

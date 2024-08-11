@@ -16,6 +16,8 @@ import net.minecraft.util.math.RotationAxis;
 public class PlayingCardRenderer extends EntityRenderer<PlayingCardEntity> {
     private static final Identifier TEXTURE_BLACK = PanosTestMod.id("textures/entity/playing_card_texture.png");
     private static final Identifier TEXTURE_RED = PanosTestMod.id("textures/entity/playing_card_texture_red.png");
+
+
     private final PlayingCardModel model;
 
     public PlayingCardRenderer(EntityRendererFactory.Context context) {
@@ -28,6 +30,7 @@ public class PlayingCardRenderer extends EntityRenderer<PlayingCardEntity> {
         //matrixStack.multiply(RotationAxis.);
         matrixStack.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(MathHelper.lerp(g, playingCardEntity.prevYaw, playingCardEntity.getYaw())));
         matrixStack.multiply(RotationAxis.POSITIVE_X.rotationDegrees(MathHelper.lerp(g, playingCardEntity.prevPitch, playingCardEntity.getPitch()) * (-1.0F)));
+        //matrixStack.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(180.0F * Math.round(Math.random()));
         VertexConsumer vertexConsumer = ItemRenderer.getDirectItemGlintConsumer(
                 vertexConsumerProvider, this.model.getLayer(this.getTexture(playingCardEntity)), false, false
         );
@@ -38,10 +41,10 @@ public class PlayingCardRenderer extends EntityRenderer<PlayingCardEntity> {
 
     @Override
     public Identifier getTexture(PlayingCardEntity entity) {
-        double randomNum = Math.round(Math.random());
+        /*double randomNum = Math.round(Math.random());
         if(randomNum == 1) {
             return TEXTURE_BLACK;
-        }
-            return TEXTURE_RED;
+        }*/
+            return TEXTURE_BLACK;
     }
 }

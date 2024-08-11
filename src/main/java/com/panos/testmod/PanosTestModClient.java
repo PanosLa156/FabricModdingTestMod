@@ -11,7 +11,9 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.particle.FlameParticle;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
+import net.minecraft.client.render.entity.IronGolemEntityRenderer;
 import net.minecraft.client.render.entity.feature.ElytraFeatureRenderer;
+import net.minecraft.client.render.entity.model.IronGolemEntityModel;
 
 public class PanosTestModClient implements ClientModInitializer {
     @Override
@@ -32,9 +34,11 @@ public class PanosTestModClient implements ClientModInitializer {
 
         EntityRendererRegistry.register(ModEntities.NAUTILUS, NautilusRenderer::new);
         EntityRendererRegistry.register(ModEntities.GNOME, GnomeRenderer::new);
+        EntityRendererRegistry.register(ModEntities.GOLEM_GUARD, GuardGolemRenderer::new);
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.NAUTILUS, NautilusModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GNOME, GnomeModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.PLAYING_CARD, PlayingCardModel::getTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GUARD_GOLEM, GuardGolemModel::getTexturedModelData);
     }
 }
