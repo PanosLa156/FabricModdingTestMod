@@ -38,7 +38,7 @@ public class GrandExpBottleItem extends Item implements ProjectileItem{
         if (!world.isClient) {
             GrandExpBottleEntity GrandExpBottleEntity = new GrandExpBottleEntity(world, user);
             GrandExpBottleEntity.setItem(itemStack);
-            GrandExpBottleEntity.setVelocity(user, user.getPitch(), user.getYaw(), -20.0F, 0.7F, 1.0F);
+            GrandExpBottleEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0F, 0.2F, 1.0F);
             world.spawnEntity(GrandExpBottleEntity);
         }
 

@@ -42,7 +42,7 @@ public class ModEntities {
             Registries.ENTITY_TYPE,
             PanosTestMod.id("playing_card"),
             EntityType.Builder.<PlayingCardEntity>create(PlayingCardEntity::new, SpawnGroup.MISC)
-                    .dimensions(0.1f, 0.1f)
+                    .dimensions(0.4f, 0.4f)
                     .maxTrackingRange(4).trackingTickInterval(10)
                     .build());
 
