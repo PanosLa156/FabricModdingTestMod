@@ -67,9 +67,4 @@ public class PlayingCardItem extends Item implements ProjectileItem {
                 .power(ProjectileItem.Settings.DEFAULT.power() * 2F)
                 .build();
     }
-
-    /*@Override
-    public void initializeProjectile(ProjectileEntity entity, double x, double y, double z, float power, float uncertainty) {
-        ProjectileItem.super.initializeProjectile(entity, x, y, z, power, uncertainty);
-    }*/
 }

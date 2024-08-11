@@ -19,7 +19,7 @@ public class PlayingCardModel<T extends PlayingCardEntity> extends SinglePartEnt
 	public static TexturedModelData getTexturedModelData() {
 		ModelData modelData = new ModelData();
 		ModelPartData modelPartData = modelData.getRoot();
-		ModelPartData CardGroup = modelPartData.addChild("CardGroup", ModelPartBuilder.create().uv(0, 0).cuboid(-3.0F, -20.0F, -4.0F, 6.0F, 1.0F, 8.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
+		ModelPartData CardGroup = modelPartData.addChild("CardGroup", ModelPartBuilder.create().uv(0, 0).cuboid(-3.0F, -25.0F, -4.0F, 6.0F, 1.0F, 8.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 24.0F, 0.0F));
 		return TexturedModelData.of(modelData, 32, 32);
 	}
 
