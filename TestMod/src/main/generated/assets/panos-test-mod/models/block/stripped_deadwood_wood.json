@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "panos-test-mod:block/stripped_deadwood_log",
+    "side": "panos-test-mod:block/stripped_deadwood_log"
+  }
+}

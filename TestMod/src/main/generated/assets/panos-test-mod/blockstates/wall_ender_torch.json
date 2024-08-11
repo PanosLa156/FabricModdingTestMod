@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "panos-test-mod:block/wall_ender_torch"
+    },
+    "facing=north": {
+      "model": "panos-test-mod:block/wall_ender_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "panos-test-mod:block/wall_ender_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "panos-test-mod:block/wall_ender_torch",
+      "y": 180
+    }
+  }
+}

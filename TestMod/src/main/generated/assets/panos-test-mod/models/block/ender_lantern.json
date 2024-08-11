@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_lantern",
+  "textures": {
+    "lantern": "panos-test-mod:block/ender_lantern"
+  }
+}

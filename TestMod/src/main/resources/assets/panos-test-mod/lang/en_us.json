@@ -1,0 +1,26 @@
+{
+  "item.panos-test-mod.withered_bone": "Withered Bone",
+  "item.panos-test-mod.vodka": "Serkova 700ml",
+  "item.panos-test-mod.small_exp_bottle": "Small Exp Bottle",
+  "item.panos-test-mod.medium_exp_bottle": "Medium Exp Bottle",
+  "item.panos-test-mod.large_exp_bottle": "Large Exp Bottle",
+  "item.panos-test-mod.grand_exp_bottle": "Grand Exp Bottle",
+  "item.panos-test-mod.nautilus_spawn_egg": "Nautilus Spawn Egg",
+  "item.panos-test-mod.ruby": "Ruby",
+  "item.panos-test-mod.dragon_elytra": "Dragon Elytra",
+  "item.panos-test-mod.playing_card": "Playing Card",
+
+  "block.panos-test-mod.white_cobblestone": "White Cobblestone",
+  "block.panos-test-mod.blue_wood_planks": "Blue Wood Planks",
+  "block.panos-test-mod.copper_torch": "Copper Torch",
+  "block.panos-test-mod.ender_torch": "Ender Torch",
+  "block.panos-test-mod.copper_lantern": "Copper Lantern",
+  "block.panos-test-mod.ender_lantern": "Ender Lantern",
+
+  "block.panos-test-mod.deadwood_log": "Deadwood Log",
+  "block.panos-test-mod.deadwood_wood": "Deadwood Wood",
+  "block.panos-test-mod.deadwood_planks": "Deadwood Planks",
+  "block.panos-test-mod.stripped_deadwood_log": "Stripped Deadwood Log",
+  "block.panos-test-mod.stripped_deadwood_wood": "Stripped Deadwood Wood",
+  "itemGroup.panos-test-mod.example_group": "Panos Mod Items"
+}

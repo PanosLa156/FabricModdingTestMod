@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "/",
+        "c"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:coal"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "c": {
+            "item": "minecraft:popped_chorus_fruit"
+        }
+    },
+    "result": {
+        "id": "panos-test-mod:ender_torch",
+        "count": 4
+    }
+}
